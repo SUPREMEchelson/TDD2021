@@ -13,4 +13,8 @@ public class DictionaryTest {
     @Test public void testDictionaryName(){
         assertThat(dict.getName(), equalTo("Example"));
     }
+
+    @Test public void testDictionaryEmpty(){assertThat(dict.getName(),equalTo(null));}
+
+
 }
