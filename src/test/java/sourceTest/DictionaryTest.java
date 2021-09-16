@@ -1,4 +1,5 @@
 package sourceTest;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.hamcrest.core.IsEqual.equalTo;
@@ -8,7 +9,12 @@ import static org.hamcrest.Matchers.*;
 import source.Dictionary;
 
 public class DictionaryTest {
-    public Dictionary dict = new Dictionary();
+    public Dictionary dict;
+
+    @Before public void initialize () {
+        dict = new Dictionary("Example");
+    }
+
 
 
     @Test public void testDictionaryName(){

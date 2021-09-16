@@ -8,7 +8,7 @@ public class Dictionary {
     private String mot2;
 
 
-   public  Dictionary(){
+   public  Dictionary(String name){
    }
     public void isEmpty(){ name = null;  }
 
